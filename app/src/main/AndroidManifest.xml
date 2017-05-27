@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yuzelli.transparentwallpaper">
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+
 
 
     <application
@@ -20,7 +24,7 @@
         </activity>
         <!-- 配置实时壁纸Service -->
         <service
-                android:label="@string/app_name"
+            android:label="@string/app_name"
             android:name=".CameraLiveWallpaper"
             android:permission="android.permission.BIND_WALLPAPER">
             <!-- 为实时壁纸配置intent-filter -->

@@ -12,6 +12,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="set transparent wallpaper"
-
        />
+
+
+    <CheckBox
+        android:id="@+id/id_cb_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="是否静音"
+        android:layout_below="@+id/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp" />
 </RelativeLayout>
